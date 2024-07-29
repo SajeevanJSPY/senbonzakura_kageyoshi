@@ -1,0 +1,18 @@
+[package]
+name = "senbonzakura_kageyoshi"
+version = "0.0.1"
+edition = "2021"
+description = "near protocol implementation using substrate framework"
+license = "MIT"
+
+[dependencies]
+szk_template = { path = "../pallets/template" }
+szk_runtime = { path = "../runtime" }
+
+# substrate client
+sc-cli = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.9.0" }
+sc-service = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.9.0" }
+sc-network = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.9.0" }
+
+# subtrate primitives
+sp-keyring = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.9.0" }

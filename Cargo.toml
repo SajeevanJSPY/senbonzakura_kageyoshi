@@ -1,0 +1,3 @@
+[workspace]
+members = ["node", "pallets/template", "runtime"]
+resolver = "2"
