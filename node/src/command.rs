@@ -1,4 +1,4 @@
-use crate::cli::Cli;
+use crate::cli::{Cli, Subcommand};
 use sc_cli::SubstrateCli;
 
 impl SubstrateCli for Cli {
@@ -32,8 +32,10 @@ impl SubstrateCli for Cli {
 }
 
 pub fn run() -> sc_cli::Result<()> {
-    let _cli = Cli::from_args();
+    let cli = Cli::from_args();
 
-    println!("Senbonzakura Kageyoshi");
-    Ok(())
+    match &cli.subcommand {
+        Some(Subcommand::Key(cmd)) => cmd.run(&cli),
+        _ => todo!(),
+    }
 }
