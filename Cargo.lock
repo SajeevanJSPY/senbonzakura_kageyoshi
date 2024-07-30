@@ -7261,6 +7261,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "szk_primitives"
+version = "0.1.0"
+dependencies = [
+ "sp-core",
+ "sp-runtime",
+]
+
+[[package]]
 name = "szk_runtime"
 version = "0.1.0"
 
