@@ -1,6 +1,8 @@
 [package]
 name = "szk_runtime"
-version = "0.1.0"
-edition = "2021"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+license = "MIT"
 
 [dependencies]

@@ -36,6 +36,6 @@ pub fn run() -> sc_cli::Result<()> {
 
     match &cli.subcommand {
         Some(Subcommand::Key(cmd)) => cmd.run(&cli),
-        _ => todo!(),
+        _ => Ok(()),
     }
 }
